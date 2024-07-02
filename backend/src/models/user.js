@@ -15,6 +15,10 @@ const User = sequelize.define('User', {
         allowNull: true,
         defaultValue: ""
     },
+    gender: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
 }, {
     tableName: 'user',
     timestamps: false,

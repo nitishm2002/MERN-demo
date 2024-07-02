@@ -4,6 +4,7 @@ async function addUser(req, res) {
     try {
         let newUser = await User.create({
             name: req.body.name,
+            gender: req.body.gender,
         });
 
         res.status(200).json({
@@ -19,6 +20,7 @@ async function addUser(req, res) {
 
 async function getUser(req, res) {
     try {
+        // let {role}
         let users = await User.findAll({});
 
         res.status(200).json({

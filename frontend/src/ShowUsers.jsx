@@ -37,6 +37,10 @@ const ShowUsers = () => {
             field: 'name',
             headerName: 'Name',
             width: 160,
+        }, {
+            field: 'gender',
+            headerName: 'Gender',
+            width: 160,
         },
         {
             field: 'actions',
@@ -58,7 +62,7 @@ const ShowUsers = () => {
     ];
 
     return (
-        <div>
+        <>
             <Box sx={{ height: 400, width: '80%', display: 'flex', alignItems: 'center', mt: '30px', ml: 'auto', mr: 'auto' }}>
                 <DataGrid
                     rows={rows}
@@ -75,7 +79,7 @@ const ShowUsers = () => {
                     disableRowSelectionOnClick
                 />
             </Box>
-        </div>
+        </>
     );
 }
 
